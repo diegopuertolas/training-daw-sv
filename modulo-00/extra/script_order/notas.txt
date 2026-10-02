@@ -1,0 +1,12 @@
+Orden que espero (antes de abrir la página):
+1.
+2.
+3.
+4.
+5.
+
+Orden real:
+
+Por qué los scripts con defer se ejecutan los últimos:
+
+¿Cambia el orden al intercambiar diferido-1.js y diferido-2.js? ¿Y con async?

@@ -45,6 +45,32 @@ Cada ejercicio trae el enunciado en los comentarios de su código. La columna
 | | `02_insert_if_not_exists` · insertar sin duplicar ni modificar | `UD1/07_insert_if_not_exists` |
 | | `03_iterators` · `forEach`, `map`, `filter` y `reduce` con pilotos | `UD3/04_iterators` |
 
+### Repaso del módulo 00
+
+Ejercicios adicionales, enlazados desde `/modulo-00/ejercicios.html`. Viven en
+`modulo-00/extra/`, agrupados por la unidad que repasan. Los ficheros `.js` con `node:assert`
+necesitan Node 20 o posterior (usan `toSorted`).
+
+| Unidad que repasa | Ejercicio |
+|---|---|
+| 01 · El navegador como entorno | `script_order` · predecir el orden de scripts normales, en línea y con `defer` |
+| | `strict_errors` · tres errores silenciosos que destapa `'use strict'` |
+| 02 · Tipos dinámicos y coerción | `predict_coercion` · predecir coerciones, `typeof`, igualdades y `\|\|` frente a `??` |
+| | `parse_quantity` · convertir el texto de un campo en una cantidad válida |
+| | `nullish_defaults` · elegir entre `\|\|` y `??` para cada valor por defecto |
+| 03 · Funciones como valores | `arrow_bugs` · cuatro funciones flecha con un fallo cada una |
+| | `price_formatters` · callbacks y funciones que devuelven funciones |
+| | `no_overloading` · sustituir dos «sobrecargas» por una función con valores por defecto |
+| 04 · Ámbito y closures | `counter` · contador con estado privado |
+| | `once` · función que sólo se ejecuta una vez |
+| | `loop_timeouts` · el bucle de `setTimeout` con `var`, arreglado de dos formas |
+| 05 · Objetos, arrays y referencias | `immutable_order` · copias superficiales, por niveles y profundas de un pedido |
+| | `destructuring_params` · desestructuración en parámetros, `?.` y rest |
+| 06 · Métodos de array | `find_some_every` · `find`, `findIndex`, `some` y `every` |
+| | `sort_without_surprises` · `sort` numérico, `localeCompare` y `toSorted` |
+| | `shop_report` · cadenas de `filter`, `map`, `reduce` y `toSorted` |
+| | `gradebook` · reto: closures, copias y métodos de array juntos |
+
 ## Módulo 01 · JavaScript en el navegador: el DOM
 
 | Unidad | Ejercicio | Origen |

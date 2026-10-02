@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orden de ejecución de los scripts</title>
+    <!-- Unidad: El navegador como entorno de ejecución
+
+         Esta página carga cinco scripts de formas distintas. Cada uno escribe
+         en la consola su nombre y si ha encontrado el <h1 id="titulo">.
+
+         1. ANTES de abrir la página, apunta en notas.txt en qué orden crees que
+            aparecerán los cinco mensajes y cuáles encontrarán el título.
+         2. Abre la página con la consola abierta (F12) y compara.
+         3. Explica en notas.txt por qué los scripts con defer se ejecutan los
+            últimos aunque estén escritos los primeros.
+         4. Cambia el orden de diferido-1.js y diferido-2.js en el <head>.
+            ¿Cambia el orden de sus mensajes? ¿Pasaría lo mismo con async?
+    -->
+    <script src="./inicio.js"></script>
+    <script src="./diferido-1.js" defer></script>
+    <script src="./diferido-2.js" defer></script>
+</head>
+<body>
+    <h1 id="titulo">Orden de ejecución</h1>
+
+    <script>
+        console.log('en línea: título', document.querySelector('#titulo'))
+    </script>
+
+    <p>Abre la consola de las herramientas de desarrollo para ver los resultados.</p>
+
+    <script src="./final.js"></script>
+</body>
+</html>
