@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menú desplegable</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        .desplegable { position: relative; display: inline-block; }
+        .menu { position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #999;
+                padding: 0.5rem; min-width: 12rem; list-style: none; margin: 0; }
+        .menu:not(.abierto) { display: none; }
+        .menu li { padding: 0.2rem 0; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Mi cuenta</h1>
+    <div class="desplegable">
+        <button id="abrir-menu" aria-expanded="false">Opciones ▾</button>
+        <ul class="menu" id="menu">
+            <li><label><input type="checkbox" id="modo-oscuro"> Modo oscuro</label></li>
+            <li><label><input type="checkbox" id="avisos"> Recibir avisos</label></li>
+            <li><a href="#perfil" id="ir-perfil">Ver perfil</a></li>
+        </ul>
+    </div>
+    <p id="contenido">Contenido de la página. Un clic aquí debería cerrar el menú.</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catálogo</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        #catalogo { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1rem; }
+        .tarjeta { border: 1px solid #ccc; border-radius: 0.5rem; padding: 0.8rem; }
+        .tarjeta.agotado { opacity: 0.5; }
+        .tarjeta.oferta { border-color: #c60; }
+        .precio { font-weight: bold; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Catálogo</h1>
+    <div id="catalogo"></div>
+</body>
+</html>

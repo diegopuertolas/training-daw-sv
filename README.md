@@ -86,6 +86,30 @@ necesitan Node 20 o posterior (usan `toSorted`).
 | 06 · Almacenamiento en el navegador | `01_theme_preference` · preferencias y visitas en `localStorage` | nuevo |
 | | `02_persistent_tasks` · lista de tareas que sobrevive a recargas | nuevo |
 
+### Repaso del módulo 01
+
+Ejercicios adicionales, enlazados desde `/modulo-01/ejercicios.html`. Viven en
+`modulo-01/extra/`, agrupados por la unidad que repasan. Los que tienen
+`index.html` traen un `test.js` que comprueba tu código al cargar la página:
+si está bien resuelto, la consola muestra `Test OK`. Los `.js` sin HTML se
+ejecutan con Node, como los del módulo 00.
+
+| Unidad que repasa | Ejercicio |
+|---|---|
+| 01 · El árbol DOM | `menu_selectors` · selectores de atributo, `NodeList` a array, `closest` y hermanos |
+| | `product_table` · subir con `closest` y bajar con `querySelector` en una tabla |
+| 02 · Modificar el documento | `render_cards` · tarjetas con `createElement`, clases condicionales y `replaceChildren` |
+| | `fix_innerhtml` · reescribir sin `innerHTML` una lista de comentarios vulnerable a XSS |
+| 03 · Eventos | `keyboard_shortcuts` · atajos con `keydown`, `preventDefault` y `e.target` |
+| | `limited_clicks` · `removeEventListener` con una función con nombre y `{ once: true }` |
+| 04 · Propagación y delegación | `predict_propagation` · predecir captura, burbuja y `stopPropagation` (con `notas.txt`) |
+| | `dropdown_menu` · cerrar un menú al hacer clic fuera, sin `stopPropagation` |
+| 05 · Formularios y validación | `validate_registration` · la validación que repetiría el servidor (Node) |
+| | `booking_dates` · `setCustomValidity` entre dos campos, `valueAsDate` y `valueAsNumber` |
+| 06 · Almacenamiento en el navegador | `safe_storage` · un envoltorio de `localStorage` con JSON y valor por defecto (Node) |
+| | `form_draft` · borrador de un formulario que sobrevive a recargas |
+| | `shopping_cart` · reto: carrito con delegación, validación y `localStorage` |
+
 ## Módulo 02 · JavaScript asíncrono y modular
 
 | Unidad | Ejercicio | Origen |
@@ -103,3 +127,29 @@ necesitan Node 20 o posterior (usan `toSorted`).
 | 05 · Peticiones HTTP con fetch | `01_fetch` · lista de usuarios con estados de carga y error | `UD3/10_fetch` |
 | 06 · Módulos ES | `01_split_modules` · dividir una aplicación en módulos | nuevo |
 | | `02_module_once` · un módulo compartido se ejecuta una vez | nuevo |
+
+### Repaso del módulo 02
+
+Ejercicios adicionales, enlazados desde `/modulo-02/ejercicios.html`. Viven en
+`modulo-02/extra/` y casi todos se ejecutan con Node (`node main.js` o
+`node main.mjs`) e imprimen `Test OK` si están bien resueltos. Los de `fetch`
+sustituyen `fetch` por uno simulado: no necesitan red, pero sí Node 18 o
+posterior.
+
+| Unidad que repasa | Ejercicio |
+|---|---|
+| 01 · Clases y el valor de this | `bank_account` · campos privados, getter, `static`, herencia y `super` |
+| | `fix_this` · cuatro fragmentos que pierden su `this` |
+| | `prototype_lookup` · predecir la búsqueda por la cadena de prototipos |
+| 02 · El bucle de eventos | `predict_order_advanced` · cinco escenarios de tareas, microtareas y `await` |
+| | `chunked_work` · procesar por trozos cediendo el hilo con `setTimeout` |
+| 03 · Promesas | `promisify` · convertir una API de callbacks en promesas |
+| | `timeout_race` · `Promise.race`, `Promise.any` y `Promise.allSettled` |
+| | `fix_chains` · cuatro cadenas de `then` con un fallo cada una |
+| 04 · async y await | `retry` · reintentos con espera creciente y `try/catch` |
+| | `concurrency_pool` · reto: como mucho N operaciones a la vez |
+| 05 · Peticiones HTTP con fetch | `fetch_json_helper` · `response.ok`, una clase `HttpError`, POST y DELETE |
+| | `search_abort` · cancelar búsquedas obsoletas con `AbortController` |
+| 06 · Módulos ES | `fix_imports` · cinco `import` rotos que hay que arreglar uno a uno |
+| | `shared_state` · un módulo que comparte estado y los enlaces vivos de `export let` |
+| | `library_app` · reto: aplicación con módulos, clases y `fetch` contra `json-server` |

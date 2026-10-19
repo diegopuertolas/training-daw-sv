@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserva</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 30rem; }
+        label { display: block; margin-top: 0.6rem; }
+        input:invalid { border-color: #c00; }
+        #resumen { margin-top: 1rem; font-weight: bold; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Reserva tu habitación</h1>
+    <form id="reserva">
+        <label for="entrada">Entrada</label>
+        <input id="entrada" name="entrada" type="date" required>
+
+        <label for="salida">Salida</label>
+        <input id="salida" name="salida" type="date" required>
+
+        <label for="personas">Personas</label>
+        <input id="personas" name="personas" type="number" min="1" max="4" value="2" required>
+
+        <p><button>Reservar</button></p>
+    </form>
+    <p id="resumen"></p>
+</body>
+</html>

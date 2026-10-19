@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto con borrador</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 30rem; }
+        label { display: block; margin-top: 0.6rem; }
+        input, select, textarea { width: 100%; box-sizing: border-box; }
+        #estado { color: #666; font-size: 0.9em; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form id="contacto">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" required>
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto">
+            <option value="duda">Duda sobre el curso</option>
+            <option value="error">He encontrado un error</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+        <label><input type="checkbox" name="copia" id="copia" style="width:auto"> Quiero una copia</label>
+
+        <p><button>Enviar</button></p>
+    </form>
+    <p id="estado"></p>
+</body>
+</html>

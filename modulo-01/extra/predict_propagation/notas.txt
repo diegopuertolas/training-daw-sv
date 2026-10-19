@@ -1,0 +1,37 @@
+a) Clic en «Comprar». Mensajes que espero, en orden:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+   Mensajes reales:
+
+
+b) Clic en el texto del párrafo, fuera de los botones. Mensajes que espero:
+
+
+   Mensajes reales:
+
+
+c) Clic en «Borrar». Mensajes que espero:
+
+
+   Mensajes reales:
+
+
+Preguntas
+
+1. En el caso a), ¿por qué «tienda» aparece dos veces y «producto» sólo una?
+
+2. En el caso b), ¿en qué fase recibe el evento el listener de acciones que
+   no tiene { capture: true }? ¿Por qué?
+
+3. En el caso c), stopPropagation() se llama en el botón. ¿Por qué se siguen
+   viendo los mensajes de captura de tienda y acciones?
+
+4. Un compañero quiere que el clic en «Borrar» no llegue a la tarjeta y añade
+   stopPropagation(). ¿Qué listener de esta página deja de funcionar sin que
+   él lo pretendiera?

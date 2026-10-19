@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventario</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 0.3rem 0.6rem; text-align: left; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Inventario</h1>
+    <table id="inventario">
+        <thead>
+            <tr><th>Producto</th><th>Stock</th><th></th></tr>
+        </thead>
+        <tbody>
+            <tr data-id="101">
+                <td class="nombre">Teclado mecánico</td>
+                <td class="stock">12</td>
+                <td><div class="acciones"><button class="reponer">Reponer</button></div></td>
+            </tr>
+            <tr data-id="102">
+                <td class="nombre">Ratón inalámbrico</td>
+                <td class="stock">0</td>
+                <td><div class="acciones"><button class="reponer"><span class="icono">+</span> Reponer</button></div></td>
+            </tr>
+            <tr data-id="103">
+                <td class="nombre">Monitor 27"</td>
+                <td class="stock">3</td>
+                <td><div class="acciones"><button class="reponer">Reponer</button></div></td>
+            </tr>
+            <tr data-id="104">
+                <td class="nombre">Alfombrilla</td>
+                <td class="stock">0</td>
+                <td><div class="acciones"><button class="reponer">Reponer</button></div></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Abre la consola de las herramientas de desarrollo para ver el resultado de las comprobaciones.</p>
+</body>
+</html>

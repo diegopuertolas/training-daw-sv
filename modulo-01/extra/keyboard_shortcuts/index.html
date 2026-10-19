@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atajos de teclado</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 40rem; }
+        #ayuda { position: fixed; inset: 20% 25%; background: #fff; border: 2px solid #333; padding: 1rem; }
+        kbd { border: 1px solid #999; border-radius: 3px; padding: 0 0.3rem; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Documentación</h1>
+    <p>
+        <label for="buscar">Buscar</label>
+        <input id="buscar" type="search" placeholder="Pulsa / para buscar">
+    </p>
+    <p>
+        <label for="notas">Tus notas</label><br>
+        <textarea id="notas" rows="4" cols="40"></textarea>
+    </p>
+    <p>Pulsa <kbd>?</kbd> para ver los atajos.</p>
+
+    <div id="ayuda" hidden>
+        <h2>Atajos</h2>
+        <ul>
+            <li><kbd>/</kbd> buscar</li>
+            <li><kbd>?</kbd> esta ayuda</li>
+            <li><kbd>Esc</kbd> cerrar</li>
+        </ul>
+        <button id="cerrar-ayuda">Cerrar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reto · mi biblioteca</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 42rem; }
+        form { display: grid; grid-template-columns: 1fr 1fr 6rem auto; gap: 0.4rem; margin-bottom: 1rem; }
+        #libros li { display: flex; gap: 0.5rem; align-items: center; padding: 0.3rem 0; border-bottom: 1px solid #eee; }
+        #libros li .descripcion { flex: 1; }
+        #libros li.leido .descripcion { text-decoration: line-through; opacity: 0.6; }
+        #estado.error { color: #c00; }
+        #estado.cargando { color: #666; }
+    </style>
+    <!-- Un solo script: el navegador descubre el resto siguiendo los import -->
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <h1>Mi biblioteca</h1>
+
+    <form id="nuevo">
+        <input name="titulo" placeholder="Título" required>
+        <input name="autor" placeholder="Autor" required>
+        <input name="anio" type="number" placeholder="Año" min="1450" max="2100" required>
+        <button>Añadir</button>
+    </form>
+
+    <p>
+        <label for="filtro">Filtrar</label>
+        <input id="filtro" type="search" placeholder="título o autor">
+    </p>
+
+    <p id="estado" role="status"></p>
+    <ul id="libros"></ul>
+    <p id="resumen"></p>
+</body>
+</html>

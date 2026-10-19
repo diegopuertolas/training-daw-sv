@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Votación</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 40rem; }
+        #aviso-cookies { background: #eee; padding: 0.8rem; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>¿Qué tema quieres repasar?</h1>
+    <p>Tienes 3 votos.</p>
+    <ul id="temas">
+        <li>Eventos <button class="votar" data-tema="eventos">Votar</button></li>
+        <li>Delegación <button class="votar" data-tema="delegacion">Votar</button></li>
+    </ul>
+    <p id="restantes">Te quedan 3 votos</p>
+
+    <div id="aviso-cookies">
+        Esta página guarda tus votos en tu navegador.
+        <button id="aceptar">Entendido</button>
+    </div>
+    <p id="registro"></p>
+</body>
+</html>

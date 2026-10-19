@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carta del restaurante</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 40rem; }
+        .plato { display: flex; justify-content: space-between; padding: 0.3rem 0; }
+        .destacado .nombre { font-weight: bold; }
+    </style>
+    <script src="./main.js" defer></script>
+    <script src="./test.js" defer></script>
+</head>
+<body>
+    <h1>Carta</h1>
+
+    <section id="entrantes">
+        <h2>Entrantes</h2>
+        <ul class="platos">
+            <li class="plato" data-precio="6.5" data-vegetariano>
+                <span class="nombre">Ensalada de la huerta</span>
+                <span class="precio">6,50 €</span>
+            </li>
+            <li class="plato" data-precio="8">
+                <span class="nombre">Croquetas de jamón</span>
+                <span class="precio">8,00 €</span>
+            </li>
+            <li class="plato" data-precio="7.25" data-vegetariano>
+                <span class="nombre">Pimientos asados</span>
+                <span class="precio">7,25 €</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="principales">
+        <h2>Principales</h2>
+        <ul class="platos">
+            <li class="plato destacado" data-precio="14">
+                <span class="nombre">Merluza a la plancha</span>
+                <span class="precio">14,00 €</span>
+            </li>
+            <li class="plato" data-precio="12.5" data-vegetariano>
+                <span class="nombre">Risotto de setas</span>
+                <span class="precio">12,50 €</span>
+            </li>
+            <li class="plato destacado" data-precio="16">
+                <span class="nombre">Entrecot</span>
+                <span class="precio">16,00 €</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="postres">
+        <h2>Postres</h2>
+        <ul class="platos">
+            <li class="plato" data-precio="4.5" data-vegetariano>
+                <span class="nombre">Tarta de queso</span>
+                <span class="precio">4,50 €</span>
+            </li>
+        </ul>
+    </section>
+
+    <p>Abre la consola de las herramientas de desarrollo para ver el resultado de las comprobaciones.</p>
+</body>
+</html>

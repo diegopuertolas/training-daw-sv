@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Predecir la propagación</title>
+    <!-- Unidad: Propagación y delegación de eventos
+
+         main.js registra listeners de click en estos elementos anidados, unos en
+         fase de captura y otros en fase de burbuja. Cada uno escribe en la
+         consola qué elemento lo ha recibido y en qué fase.
+
+         1. ANTES de hacer clic, lee main.js y apunta en notas.txt qué mensajes
+            aparecerán, y en qué orden, en cada uno de los tres casos:
+              a) clic en el botón «Comprar»
+              b) clic en el texto del párrafo (fuera del botón)
+              c) clic en el botón «Borrar»
+         2. Abre la página con la consola abierta (F12), haz cada clic y compara.
+         3. Responde en notas.txt a las preguntas finales.
+    -->
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        section, article, p { border: 1px solid #999; padding: 0.8rem; margin: 0.3rem; }
+    </style>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <section id="tienda">
+        section#tienda
+        <article id="producto">
+            article#producto
+            <p id="acciones">
+                p#acciones
+                <button id="comprar">Comprar</button>
+                <button id="borrar">Borrar</button>
+            </p>
+        </article>
+    </section>
+</body>
+</html>

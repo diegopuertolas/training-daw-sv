@@ -1,0 +1,7 @@
+{
+  "libros": [
+    { "id": "1", "titulo": "Eloquent JavaScript", "autor": "Marijn Haverbeke", "anio": 2018, "leido": true },
+    { "id": "2", "titulo": "You Don't Know JS Yet", "autor": "Kyle Simpson", "anio": 2020, "leido": false },
+    { "id": "3", "titulo": "JavaScript: The Good Parts", "autor": "Douglas Crockford", "anio": 2008, "leido": false }
+  ]
+}
