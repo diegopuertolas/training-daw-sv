@@ -1,0 +1,23 @@
+// Unidad: Funciones como valores
+// Ejecuta: node main.js
+//
+// printMultiplicationTables() imprime las tablas de multiplicar del 1 al 10 en
+// forma de cuadrícula: la primera fila y la primera columna son los factores.
+// Pista: String.prototype.padEnd() ayuda a alinear las columnas.
+
+function printMultiplicationTables() {
+  for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+      console.log(i * j);
+    }
+  }
+}
+
+printMultiplicationTables();
+// salida esperada:
+//     1   2   3   ...
+// 1   1   2   3   ...
+// 2   2   4   6   ...
+// 3   3   6   9   ...
+// ...
+// 10  10  20  30  ...
