@@ -9,26 +9,35 @@
 const assert = require('node:assert/strict')
 
 function applyToAll(list, fn) {
-    const result = []
-    for (const item of list) {
-        result.push(fn(item))
-    }
-    return result
+	const result = [];
+	for (const item of list) {
+		result.push(fn(item));
+	}
+	return result;
 }
 
 // 1. Debe devolver el doble de n
-const double = n => { n * 2 }
+const double = n => { return n * 2 }
+// No estabamos devolviendo nada, faltaba el return. 
 
 // 2. Debe devolver un objeto { value: n }
-const wrap = n => { value: n }
+const wrap = n => {
+	return {
+		value: n
+	}
+}
+// No estabamos devolviendo nada, faltaba el return. 
 
 // 3. Debe devolver true o false, nunca otra cosa
 const isAdult = age => {
-    if (age >= 18) return true
+	if (age >= 18) return true;
+	return false;
 }
+// Faltaba el return false en caso de que no se cumpliese la condición.
 
 // 4. Debe devolver [2, 4, 6]
-const doubled = () => applyToAll([1, 2, 3], double())
+const doubled = () => applyToAll([1, 2, 3], double)
+// Estabamos ejecutando double al poner double(), simplemente la pasamos como parámetro.
 
 assert.strictEqual(double(4), 8)
 assert.deepStrictEqual(wrap(5), { value: 5 })
