@@ -14,7 +14,20 @@
 
 const assert = require('node:assert/strict')
 
-function createCounter(start, step) {
+function createCounter(start = 0, step = 1) {
+  let cuenta = start;
+  return {
+    next: () => {
+      cuenta += step;
+      return cuenta;
+    },
+    current: () => {
+      return cuenta;
+    },
+    reset: () => {
+      cuenta = start;
+    }
+  }
 }
 
 const a = createCounter()
