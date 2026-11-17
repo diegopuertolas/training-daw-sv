@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Liga de barrio</title>
+  </head>
+  <body>
+    <!--
+      Estructura de la página de la PARTE 3. NO LA MODIFIQUES:
+      los tests cargan este mismo HTML y buscan los elementos por su id.
+    -->
+    <h1>Liga de barrio</h1>
+
+    <form id="form-partido">
+      <input id="jornada" name="jornada" type="number" min="1" placeholder="Jornada" required />
+      <select id="local" name="local">
+        <option value="Leones">Leones</option>
+        <option value="Tigres">Tigres</option>
+        <option value="Halcones">Halcones</option>
+        <option value="Lobos">Lobos</option>
+      </select>
+      <input id="goles-local" name="goles-local" type="number" min="0" placeholder="Goles" required />
+      <span>-</span>
+      <input id="goles-visitante" name="goles-visitante" type="number" min="0" placeholder="Goles" required />
+      <select id="visitante" name="visitante">
+        <option value="Leones">Leones</option>
+        <option value="Tigres">Tigres</option>
+        <option value="Halcones">Halcones</option>
+        <option value="Lobos">Lobos</option>
+      </select>
+      <button type="submit">Añadir resultado</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Jornada</th>
+          <th>Local</th>
+          <th>Resultado</th>
+          <th>Visitante</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="partidos"></tbody>
+    </table>
+
+    <p id="resumen">0 partidos · 0 goles</p>
+
+    <button id="anular-jornada" type="button">Anular la última jornada</button>
+  </body>
+</html>

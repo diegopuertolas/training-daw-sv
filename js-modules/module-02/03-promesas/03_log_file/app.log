@@ -1,0 +1,5 @@
+[2026-10-19 10:00:01] INFO Usuario conectandose
+[2026-10-19 10:02:15] ERROR Fallo de conexion a la base de datos
+[2026-10-19 10:05:30] WARNING Tiempo de respuesta elevado
+[2026-10-19 10:10:42] ERROR Memoria insuficiente en el servidor
+[2026-10-19 10:12:00] INFO Usuario desconectado

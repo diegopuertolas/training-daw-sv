@@ -1,0 +1,10 @@
+[
+  {
+    "fecha": "[2026-10-19 10:02:15]",
+    "mensaje": "ERROR Fallo de conexion a la base de datos"
+  },
+  {
+    "fecha": "[2026-10-19 10:10:42]",
+    "mensaje": "ERROR Memoria insuficiente en el servidor"
+  }
+]

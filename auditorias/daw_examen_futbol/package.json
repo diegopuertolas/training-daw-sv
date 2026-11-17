@@ -1,0 +1,21 @@
+{
+  "name": "examen-futbol",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Examen de JavaScript básico (modelo B): arrays, funciones flecha, promesas y DOM",
+  "scripts": {
+    "test": "jest",
+    "test:partidos": "jest partidos",
+    "test:federacion": "jest federacion",
+    "test:interfaz": "jest interfaz",
+    "test:extra": "jest --testPathIgnorePatterns=/node_modules/ -- extra"
+  },
+  "jest": {
+    "reporters": ["default", "<rootDir>/tests/puntuacion.js"],
+    "testPathIgnorePatterns": ["/node_modules/", "/tests/extra\\.test\\.js$"]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
