@@ -10,6 +10,9 @@ console.log('main.js se ha ejecutado')
 
 const titulo = document.querySelector('#titulo')
 // TODO: cambia el texto del título con titulo.textContent
+titulo.textContent = 'Diego Puértolas Ruiz';
 
 // TODO: selecciona #mensaje y escribe en él la hora de carga, por ejemplo con
 // new Date().toLocaleTimeString()
+const description = document.querySelector('#mensaje');
+mensaje.textContent = `La hora actual es: ${new Date().toLocaleDateString()}'`;
